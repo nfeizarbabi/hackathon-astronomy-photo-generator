@@ -1,4 +1,14 @@
-hmtl,
+@use "./partials/variables" as *;
+@use "./partials/typography" as *;
+
+html,
 body {
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+	&__logo {
+		width: 2rem;
+		height: 2rem;
+	}
 }
