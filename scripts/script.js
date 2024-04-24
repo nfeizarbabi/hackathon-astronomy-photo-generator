@@ -12,7 +12,7 @@ async function getRandomPhoto() {
 		dateElement.textContent = data[0].date;
 		explanationElement.textContent = data[0].explanation;
 
-		console.log(data);
+		// console.log(data);
 		imageContainer.src = imageUrl;
 	} catch (error) {
 		console.error("Error grabbing jpeg:", error);
@@ -25,3 +25,15 @@ const button = document.querySelector(".main__button");
 const titleElement = document.querySelector(".main__title");
 const dateElement = document.querySelector(".main__date");
 const explanationElement = document.querySelector(".main__explanation");
+
+button.addEventListener("click", function () {
+	getRandomPhoto();
+});
+
+const todayDate = document.querySelector(".header__date");
+
+const currentDate = {
+	date: new Date().toDateString(),
+};
+
+todayDate.textContent = currentDate.date;

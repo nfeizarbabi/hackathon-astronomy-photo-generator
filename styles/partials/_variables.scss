@@ -3,12 +3,13 @@ $color-primary-white: #fff;
 $color-primary-carbon: #17171b;
 
 $color-secondary-red: #cf2e2e;
+$color-secondary-grey: #787a70;
 
 $padding-default: 1.5rem;
 $margin-innerElement-default: 0.5rem;
 
 @mixin logo {
-	width: 3.75rem;
+	width: 4.5rem;
 	aspect-ratio: auto 60/50.58;
 }
 

@@ -5,7 +5,9 @@ html,
 body {
 	box-sizing: border-box;
 	margin: 0;
+	min-height: 100vh;
 	font-family: "Inter", Helvetica, sans-serif;
+	background-color: $color-primary-black;
 }
 
 h5 {
@@ -27,7 +29,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+	border-radius: 10px;
 	@include headerContainer;
 
 	&__logo {
@@ -37,37 +39,51 @@ a {
 
 	&__date {
 		padding-right: 1rem;
+		font-weight: 800;
+		color: $color-secondary-grey;
 	}
 }
 
 .main {
 	padding: $padding-default;
+	min-height: fit-content;
 	background-color: $color-primary-carbon;
+	background-image: url("../assets/images/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	color: $color-primary-white;
 
 	&__container {
 		display: flex;
-		padding: $padding-default;
+		align-items: center;
+		min-height: 30.5rem;
 	}
 
 	&__image {
 		object-fit: cover;
 		border-radius: 10px;
-		width: 60vw;
-		height: 40vw;
+		padding-left: $margin-innerElement-default;
+		width: 50vw;
+		max-height: 30vw;
+	}
+
+	&__header-container {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__textbox {
 		padding: $padding-default;
 		align-self: center;
-		width: 25vw;
+		text-align: justify;
+		width: 44vw;
 	}
 
 	&__button {
-		margin: 0 auto;
+		margin: 1.25rem auto;
 		padding: 0.75rem;
 		border-radius: 2px;
-		box-shadow: 3px 2px 1px $color-primary-white;
+		box-shadow: 3px 2px 1px $color-secondary-grey;
 		height: fit-content;
 		width: fit-content;
 		background-color: $color-secondary-red;
@@ -83,25 +99,33 @@ a {
 
 .footer {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 20px;
 	padding: $padding-default;
 	background-color: $color-primary-black;
-	color: $color-primary-white;
+	color: $color-secondary-grey;
 
 	&__header {
 		margin: $margin-innerElement-default;
+
+		&--txtalign {
+			text-align: right;
+		}
 	}
 
 	&__email {
 		margin: $margin-innerElement-default;
 	}
 
-	&__contact {
-		padding-right: 3.5rem;
-		// border: 1px solid yellow;
+	&__logo {
+		position: relative;
+		right: 3rem;
+		height: 2.5rem;
 	}
 
 	&__icon {
-		padding: 0.75rem 0.25rem 0.75rem 0.5rem;
+		padding: 1rem 0.25rem 0.75rem 0.5rem;
 		width: 2rem;
 		height: 2rem;
 	}
