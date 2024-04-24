@@ -109,10 +109,10 @@ a {
   font-weight: 600;
   text-align: center;
   color: #fff;
-  box-shadow: 0.5rem 0.25rem 0.25rem #fff;
 }
 .main__button:hover {
   cursor: pointer;
+  box-shadow: -0.125rem -0.125rem 1rem #fff;
 }
 .main__button:active {
   box-shadow: none;

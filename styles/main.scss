@@ -97,10 +97,10 @@ a {
 		font-weight: 600;
 		text-align: center;
 		color: $color-primary-white;
-		box-shadow: 0.5rem 0.25rem 0.25rem $color-primary-white;
 
 		&:hover {
 			cursor: pointer;
+			box-shadow: -0.125rem -0.125rem 1rem $color-primary-white;
 		}
 
 		&:active {
