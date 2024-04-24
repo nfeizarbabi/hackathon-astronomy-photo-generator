@@ -107,9 +107,13 @@ a {
   font-size: 1.25rem;
   font-weight: 600;
   color: #fff;
+  box-shadow: 0 0.3rem 0.2rem 0 #fff;
 }
 .main__button:hover {
   cursor: pointer;
+}
+.main__button:active {
+  box-shadow: none;
 }
 
 .footer {

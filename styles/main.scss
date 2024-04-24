@@ -95,9 +95,14 @@ a {
 		font-size: 1.25rem;
 		font-weight: 600;
 		color: $color-primary-white;
+		box-shadow: 0 0.3rem 0.2rem 0 $color-primary-white;
 
 		&:hover {
 			cursor: pointer;
+		}
+
+		&:active {
+			box-shadow: none;
 		}
 	}
 }
