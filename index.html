@@ -6,26 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <title>April - Hackathon</title>
+    <title>Hackathon - Astronomy Photo Generator</title>
 </head>
 
 <body>
     <header class="header">
         <img class="header__logo" src="./assets/logos/nasa-6.svg" alt="nasa-logo">
-        <h1 class="header__title">Title</h1>
+        <h1 class="header__title">Astronomy Photo Generator</h1>
         <p class="header__date">date</p>
     </header>
-    <main>
-        <img class="main__image" src="https://placehold.co/600x400"></img>
-        <div class="main__textbox">
-            <h3 class="main__title">Title</h3>
-            <h4 class="main__date">Date</h4>
-            <p class="main__explanation">Description</p>
+    <main class="main">
+        <div class="main__container">
+            <img class="main__image" src="https://placehold.co/700x500" alt="random-astronomy-photo">
+            <div class="main__textbox">
+                <h3 class="main__title">Title</h3>
+                <h4 class="main__date">Date</h4>
+                <p class="main__explanation">Description</p>
+            </div>
         </div>
-        <div class="main__button">BUTTON</div>
+        <div class="main__button">GENERATE</div>
     </main>
-    <footer></footer>
-
+    <footer class="footer">
+        <div class="footer__contact">
+            <h5>Contact</h5>
+            <div class="footer__email">
+                <h6>Email</h6>
+                <a href="mailto:nasa-data@lists.arc.nasa.gov" class="footer__link">nasa-data@lists.arc.nasa.gov</a>
+            </div>
+        </div>
+        <section class="footer__social">
+            <h5>Social</h5>
+            <div class="footer__icons">
+                <a href="https://www.instagram.com/nasa_apod"><img class="instagram"
+                        src="./assets/icons/Icon-instagram.svg" alt="instagram"></a>
+                <a href="https://github.com/nasa"><img src="./assets/icons/github/github-mark-white.svg"
+                        alt="github"></a>
+                <a href="https://twitter.com/openNASA"><img src="./assets/icons/Icon-twitter.svg" alt="twitter"></a>
+            </div>
+        </section>
+    </footer>
     <script src="./scripts/script.js"></script>
 </body>
 

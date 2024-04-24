@@ -1,10 +1,19 @@
 $color-primary-black: #000;
 $color-primary-white: #fff;
-$color-primary-grey: #2e2e32;
+$color-primary-carbon: #17171b;
+
+$color-secondary-red: #cf2e2e;
 
 $padding-default: 1rem;
 
 @mixin logo {
 	width: 3.75rem;
 	aspect-ratio: auto 60/50.58;
+}
+
+@mixin headerContainer {
+	padding: $padding-default;
+	max-height: 5.5rem;
+	background-color: $color-primary-black;
+	color: $color-primary-white;
 }

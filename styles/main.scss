@@ -12,12 +12,60 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: $padding-default;
-	max-height: 5.5rem;
-	background-color: $color-primary-black;
-	color: $color-primary-white;
+
+	@include headerContainer;
 
 	&__logo {
 		@include logo;
+	}
+}
+
+.main {
+	background-color: $color-primary-carbon;
+	color: $color-primary-white;
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		padding: $padding-default;
+	}
+
+	&__textbox {
+		padding: $padding-default;
+		align-self: center;
+	}
+
+	&__button {
+		margin: 0 auto;
+		padding: 0.75rem;
+		border-radius: 2px;
+		box-shadow: 3px 2px 1px $color-primary-white;
+		height: fit-content;
+		width: fit-content;
+		background-color: $color-secondary-red;
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: $color-primary-white;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.footer {
+	display: flex;
+	padding: $padding-default;
+	background-color: $color-primary-black;
+	color: $color-primary-white;
+
+	border: 1px solid red;
+
+	&__contact {
+		border: 1px solid yellow;
+	}
+
+	&__social {
+		border: 1px solid orange;
 	}
 }
