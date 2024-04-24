@@ -90,12 +90,14 @@ a {
 		padding: 0.75rem;
 		border-radius: 2px;
 		height: fit-content;
-		width: fit-content;
+		width: 10vw;
+		min-width: fit-content;
 		background-color: $color-secondary-red;
 		font-size: 1.25rem;
 		font-weight: 600;
+		text-align: center;
 		color: $color-primary-white;
-		box-shadow: 0 0.3rem 0.2rem 0 $color-primary-white;
+		box-shadow: 0.5rem 0.25rem 0.25rem $color-primary-white;
 
 		&:hover {
 			cursor: pointer;
@@ -113,6 +115,7 @@ a {
 	align-items: center;
 	border-radius: 20px;
 	padding: $padding-default;
+	padding-top: 0.5rem;
 	background-color: $color-primary-black;
 	color: $color-secondary-grey;
 

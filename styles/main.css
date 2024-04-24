@@ -101,13 +101,15 @@ a {
   border-radius: 2px;
   height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 10vw;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   background-color: #cf2e2e;
   font-size: 1.25rem;
   font-weight: 600;
+  text-align: center;
   color: #fff;
-  box-shadow: 0 0.3rem 0.2rem 0 #fff;
+  box-shadow: 0.5rem 0.25rem 0.25rem #fff;
 }
 .main__button:hover {
   cursor: pointer;
@@ -122,6 +124,7 @@ a {
   align-items: center;
   border-radius: 20px;
   padding: 1.5rem;
+  padding-top: 0.5rem;
   background-color: #000;
   color: #787a70;
 }
