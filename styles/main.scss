@@ -69,6 +69,7 @@ a {
 
 	&__header-container {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
@@ -77,13 +78,17 @@ a {
 		align-self: center;
 		text-align: justify;
 		width: 44vw;
+		font-weight: 500;
+	}
+
+	&__explanation {
+		margin-top: 0;
 	}
 
 	&__button {
 		margin: 1.25rem auto;
 		padding: 0.75rem;
 		border-radius: 2px;
-		box-shadow: 3px 2px 1px $color-secondary-grey;
 		height: fit-content;
 		width: fit-content;
 		background-color: $color-secondary-red;
