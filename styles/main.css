@@ -19,11 +19,26 @@ body {
   font-family: "Inter", Helvetica, sans-serif;
 }
 
+h5 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
   max-height: 5.5rem;
   background-color: #000;
   color: #fff;
@@ -31,20 +46,32 @@ body {
 .header__logo {
   width: 3.75rem;
   aspect-ratio: auto 60/50.58;
+  padding-left: 1rem;
+}
+.header__date {
+  padding-right: 1rem;
 }
 
 .main {
+  padding: 1.5rem;
   background-color: #17171b;
   color: #fff;
 }
 .main__container {
   display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
+  padding: 1.5rem;
+}
+.main__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  width: 60vw;
+  height: 40vw;
 }
 .main__textbox {
-  padding: 1rem;
+  padding: 1.5rem;
   align-self: center;
+  width: 25vw;
 }
 .main__button {
   margin: 0 auto;
@@ -66,14 +93,21 @@ body {
 
 .footer {
   display: flex;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #000;
   color: #fff;
-  border: 1px solid red;
+}
+.footer__header {
+  margin: 0.5rem;
+}
+.footer__email {
+  margin: 0.5rem;
 }
 .footer__contact {
-  border: 1px solid yellow;
+  padding-right: 3.5rem;
 }
-.footer__social {
-  border: 1px solid orange;
+.footer__icon {
+  padding: 0.75rem 0.25rem 0.75rem 0.5rem;
+  width: 2rem;
+  height: 2rem;
 }/*# sourceMappingURL=main.css.map */

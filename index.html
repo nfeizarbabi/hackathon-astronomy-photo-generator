@@ -11,37 +11,42 @@
 
 <body>
     <header class="header">
-        <img class="header__logo" src="./assets/logos/nasa-6.svg" alt="nasa-logo">
+        <a href="https://www.nasa.gov/"><img class="header__logo" src="./assets/logos/nasa-6.svg" alt="nasa-logo"></a>
         <h1 class="header__title">Astronomy Photo Generator</h1>
         <p class="header__date">date</p>
     </header>
     <main class="main">
         <div class="main__container">
-            <img class="main__image" src="https://placehold.co/700x500" alt="random-astronomy-photo">
+            <img class="main__image" src="./assets/images/placeholder-photo.jpg" alt="random-astronomy-photo">
             <div class="main__textbox">
                 <h3 class="main__title">Title</h3>
                 <h4 class="main__date">Date</h4>
-                <p class="main__explanation">Description</p>
+                <p class="main__explanation">Northrop Grumman's Cygnus space freighter is pictured in the grip of the
+                    Canadarm2 robotic arm shortly after it was
+                    detached from the Unity module. The orbital complex was soaring 260 miles above the island
+                    archipelago of Seychelles in
+                    the Indian Ocean at the time of this photograph.</p>
             </div>
         </div>
         <div class="main__button">GENERATE</div>
     </main>
     <footer class="footer">
-        <div class="footer__contact">
-            <h5>Contact</h5>
+        <section class="footer__contact">
+            <h5 class="footer__header">Contact</h5>
             <div class="footer__email">
                 <h6>Email</h6>
-                <a href="mailto:nasa-data@lists.arc.nasa.gov" class="footer__link">nasa-data@lists.arc.nasa.gov</a>
+                <a href="mailto:nasa-data@lists.arc.nasa.gov">nasa-data@lists.arc.nasa.gov</a>
             </div>
-        </div>
+        </section>
         <section class="footer__social">
-            <h5>Social</h5>
+            <h5 class="footer__header">Social</h5>
             <div class="footer__icons">
-                <a href="https://www.instagram.com/nasa_apod"><img class="instagram"
+                <a href="https://www.instagram.com/nasa_apod"><img class="footer__icon"
                         src="./assets/icons/Icon-instagram.svg" alt="instagram"></a>
-                <a href="https://github.com/nasa"><img src="./assets/icons/github/github-mark-white.svg"
-                        alt="github"></a>
-                <a href="https://twitter.com/openNASA"><img src="./assets/icons/Icon-twitter.svg" alt="twitter"></a>
+                <a href="https://github.com/nasa"><img class="footer__icon"
+                        src="./assets/icons/github/github-mark-white.svg" alt="github"></a>
+                <a href="https://twitter.com/openNASA"><img class="footer__icon" src="./assets/icons/Icon-twitter.svg"
+                        alt="twitter"></a>
             </div>
         </section>
     </footer>

@@ -4,7 +4,8 @@ $color-primary-carbon: #17171b;
 
 $color-secondary-red: #cf2e2e;
 
-$padding-default: 1rem;
+$padding-default: 1.5rem;
+$margin-innerElement-default: 0.5rem;
 
 @mixin logo {
 	width: 3.75rem;

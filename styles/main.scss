@@ -8,6 +8,21 @@ body {
 	font-family: "Inter", Helvetica, sans-serif;
 }
 
+h5 {
+	margin: 0;
+	font-size: 1.25rem;
+}
+
+h6 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: $color-primary-white;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -17,22 +32,35 @@ body {
 
 	&__logo {
 		@include logo;
+		padding-left: 1rem;
+	}
+
+	&__date {
+		padding-right: 1rem;
 	}
 }
 
 .main {
+	padding: $padding-default;
 	background-color: $color-primary-carbon;
 	color: $color-primary-white;
 
 	&__container {
 		display: flex;
-		flex-wrap: wrap;
 		padding: $padding-default;
+	}
+
+	&__image {
+		object-fit: cover;
+		border-radius: 10px;
+		width: 60vw;
+		height: 40vw;
 	}
 
 	&__textbox {
 		padding: $padding-default;
 		align-self: center;
+		width: 25vw;
 	}
 
 	&__button {
@@ -59,13 +87,22 @@ body {
 	background-color: $color-primary-black;
 	color: $color-primary-white;
 
-	border: 1px solid red;
-
-	&__contact {
-		border: 1px solid yellow;
+	&__header {
+		margin: $margin-innerElement-default;
 	}
 
-	&__social {
-		border: 1px solid orange;
+	&__email {
+		margin: $margin-innerElement-default;
+	}
+
+	&__contact {
+		padding-right: 3.5rem;
+		// border: 1px solid yellow;
+	}
+
+	&__icon {
+		padding: 0.75rem 0.25rem 0.75rem 0.5rem;
+		width: 2rem;
+		height: 2rem;
 	}
 }
