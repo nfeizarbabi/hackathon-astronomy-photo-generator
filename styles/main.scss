@@ -3,12 +3,21 @@
 
 html,
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Inter", Helvetica, sans-serif;
 }
 
 .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: $padding-default;
+	max-height: 5.5rem;
+	background-color: $color-primary-black;
+	color: $color-primary-white;
+
 	&__logo {
-		width: 2rem;
-		height: 2rem;
+		@include logo;
 	}
 }

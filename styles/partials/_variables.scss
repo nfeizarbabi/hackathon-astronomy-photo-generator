@@ -1,0 +1,10 @@
+$color-primary-black: #000;
+$color-primary-white: #fff;
+$color-primary-grey: #17171b;
+
+$padding-default: 1rem;
+
+@mixin logo {
+	width: 3.75rem;
+	aspect-ratio: auto 60/50.58;
+}
