@@ -1,8 +1,8 @@
 const imageContainer = document.querySelector(".main__image");
+const API_KEY = config.API_KEY;
 
 async function getRandomPhoto() {
-	const randomPhotoUrl =
-		"https://api.nasa.gov/planetary/apod?api_key=hobAvyiOoCWbZGTq70P4ZQkEctJmZDXdH2zWNI7k&count=1";
+	const randomPhotoUrl = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`;
 
 	try {
 		const { data } = await axios.get(randomPhotoUrl);
